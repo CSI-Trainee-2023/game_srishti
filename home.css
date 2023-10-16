@@ -1,0 +1,53 @@
+html{
+    font-size: 16px;  /*base font size  */
+}
+body{
+    overflow: hidden;
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    padding: 1.25rem;
+    background-color:rgba(0, 0, 0, 0.7) ;
+    text-align: center;
+}
+h1{
+    font-size: 2.2rem;
+    color: #fff;
+}
+main{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: url('https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/6/18/jnhtjx1nozaocxki9ekx/ios-racers-lead-asphalt-9') no-repeat center center;
+    background-size: cover; */
+}
+.playBtn:hover{
+    background: #ae1f1f;
+}
+.playBtn{
+    display:block;
+    padding: 0.5rem;
+    background: rgb(203, 65, 65);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.3125rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* margin: 1.25rem; */
+    transition: background 0.3s;
+}
+.gameDesc,.rules{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    margin: 1.25rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+.gameDesc p,.rules p{
+    font-size: 0.875rem;
+    margin: 0.625rem 0;
+}
