@@ -1,55 +1,87 @@
-body {
-    overflow: hidden;
-    background-color: #222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+*{
     margin: 0;
 }
-
-.game-container {
-    position: relative;
-    width: 100vw;
+body{
+    background-color: green;
+    display: grid;
     height: 100vh;
-    background-color: #000;
-    border: 2px solid #fff;
+    place-items: center;
     overflow: hidden;
 }
-
-.car {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px; 
-    height: 100px; 
-    background: url('https://toppng.com/uploads/preview/aston-martin-one77-01-top-down-car-sprite-1156302814774vtgthfmb.png') no-repeat center;
-    background-size: cover;
+#road{
+    background-image: url(straight-road-marking-vector-44968473.jpg);
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    height: 1000vh;
+    width: 31.5vw;
+    position: relative;
+    top: -100vh;
+    z-index: -1;
 }
-
-.obstacle {
+#start{
     position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: yellow;
-    animation: obstacleAnimation 2s linear infinite;
+    top: 50vh;
+    font-size: 2.5rem;
+    background-color: rgb(91, 151, 91);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
 }
-
-.obstacle1 { left: 10%; }
-.obstacle2 { left: 30%; }
-.obstacle3 { left: 50%; }
-.obstacle4 { left: 70%; }
-.obstacle5 { left: 90%; }
-
-.score, .highscore {
+.score{
     position: absolute;
-    color: #fff;
-    font-size: 18px;
     top: 10px;
-    left: 10px;
+    left: 20px;
+    font-size: 2rem;
 }
-@keyframes obstacleAnimation {
-    0% { top: -50px; }
-    100% { top: 100%; }
+#score{
+    top: 50px;
+}
+#obstacle1{
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left:-150px;
+    z-index: 100;
+}
+#obstacle2{
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 0px;
+    z-index: 100;
+}
+#obstacle3{
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 148px;
+    z-index: 100;
+}
+.obsImg{
+    width: 50px;
+}
+#myCarImg{
+    width: 50px;
+}
+#myCar{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 30vh;
+    left: 23px;
+}
+@keyframes roadAnimation {
+    0% {
+        top: -900vh;
+    }
+    100% {
+        top: -200vh;
+    }
 }
