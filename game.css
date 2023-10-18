@@ -45,6 +45,7 @@ body{
     height: 100px;
     left:-150px;
     z-index: 100;
+    animation: obs1 infinite linear 1.9s;
 }
 #obstacle2{
     display: grid;
@@ -54,6 +55,7 @@ body{
     height: 100px;
     left: 0px;
     z-index: 100;
+    animation: obs2 infinite linear 2.2s;
 }
 #obstacle3{
     display: grid;
@@ -63,12 +65,15 @@ body{
     height: 100px;
     left: 148px;
     z-index: 100;
+    animation: obs3 infinite linear 2.5s;
 }
 .obsImg{
     width: 50px;
+    border: 2px solid rebeccapurple;
 }
 #myCarImg{
     width: 50px;
+    border: 2px solid rebeccapurple;
 }
 #myCar{
     width: 100px;
@@ -77,6 +82,30 @@ body{
     top: 30vh;
     left: 23px;
 }
+@keyframes obs1{
+    0%{
+        top: -35vh;
+    }
+    100%{
+        top: 100vh;
+    }
+}
+@keyframes obs2{
+    0%{
+        top: -55vh;
+    }
+    100%{
+        top: 100vh;
+    }
+}
+@keyframes obs3{
+    0%{
+        top: -85vh;
+    }
+    100%{
+        top: 100vh;
+    }
+}
 @keyframes roadAnimation {
     0% {
         top: -900vh;
@@ -84,4 +113,7 @@ body{
     100% {
         top: -200vh;
     }
+}
+#obstacle1,#obstacle2,#obstacle3{
+    animation: none;
 }
